@@ -1,0 +1,74 @@
+/** tablesort **/
+
+th[role=columnheader]:not(.no-sort) {
+	cursor: pointer;
+}
+
+th[role=columnheader]:not(.no-sort):after {
+	content: '';
+	float: right;
+	margin-top: 7px;
+	border-width: 0 4px 4px;
+	border-style: solid;
+	border-color: #404040 transparent;
+	visibility: hidden;
+	opacity: 0;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+th[aria-sort=ascending]:not(.no-sort):after {
+	border-bottom: none;
+	border-width: 4px 4px 0;
+}
+
+th[aria-sort]:not(.no-sort):after {
+	visibility: visible;
+	opacity: 0.4;
+}
+
+th[role=columnheader]:not(.no-sort):hover:after {
+	visibility: visible;
+	opacity: 1;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h3{
+font-family: impact;
+}
+
+h4{
+  border-style: groove;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+  border-style: inset;
+  border-color: gray;
+}
+
+img.resize {
+  width:600px;
+  height:400px;
+}
+
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: https://www.xxlmag.com/news/2019/01/kanye-west-sues-island-def-jam-and-refuses-to-turn-over-yandhi-album-report/(border.png) 50 round;
+}
+#borderimg2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: https://twitter.com/drewdernavich/status/705426491161636864(border.png) 50 round;
+
+link {
+  color: blue
+}

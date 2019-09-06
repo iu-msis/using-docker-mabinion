@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar" href="index.html">Library</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="books.html">Table of Books</a>
+        </li>
+        <li class="nav-item">
+    </ul>
+  </div>
+</nav>
+<h1 style="background-color:hsl(0, 0%, 71%);">Kanye's Books</h1>
+<table id ="taskTable" class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Year Published</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Page Count</th>
+      <th scope="col">MSRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Dog Days</th>
+      <td>Kanye West</td>
+      <td>2000</td>
+      <td>Barack Obama Inc.</td>
+      <td>11</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <th scope="row">My Dog</th>
+      <td>Kanye West</td>
+      <td>2003</td>
+      <td>Jimmy Fallon & Jimmy Kimmel Co.</td>
+      <td>32</td>
+      <td>$500</td>
+    </tr>
+    <tr>
+      <th scope="row">What is it like to be a Dog?</th>
+      <td>Kanye West</td>
+      <td>2007</td>
+      <td>Dogs R Us</td>
+      <td>5</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <th scope="row">How to Name a Dog</th>
+      <td>Kanye West</td>
+      <td>2011</td>
+      <td>Bob Ross the Boss</td>
+      <td>17</td>
+      <td>$560</td>
+    </tr>
+    <tr>
+      <th scope="row">All Dogs go to Kanye Heaven</th>
+      <td>Kanye West</td>
+      <td>2018</td>
+      <td>Books of Business</td>
+      <td>24</td>
+      <td>$330</td>
+    </tr>
+  </tbody>
+</table>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Kanye West</h1>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col">
+
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+<h1 style="background-color:hsl(9, 100%, 64%);">Want to Add Another Book? </h1><form>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><h4>Title</h4></label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Book Title">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><h4>Author (First Name, Last Name)</h4></label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Author Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><h4>Year Published</h4></label>
+    <input type="integer" class="form-control" id="exampleInputPassword1" placeholder="Year">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><h4>Publisher</h4></label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Publisher Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><h4>Page Count</h4></label>
+    <input type="integer" class="form-control" id="exampleInputPassword1" placeholder="Number of Pages">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><h4>MSRP</h4></label>
+    <input type="float" class="form-control" id="exampleInputPassword1" placeholder="MSRP Amount">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Is This All Correct?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</html>
+</body>
+<script src="js/tablesort.min.js"></script>
+<script>
+  // Tablesort plugin from https://github.com/tristen/tablesort
+  new Tablesort(document.getElementById('taskTable'));
+</script>
+<p> </p>
+</html>
