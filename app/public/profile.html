@@ -31,6 +31,12 @@
 <br>
 
 <div id="randomUserApp">
+<!-- this button code is from stackoverflow -->
+  <div id="refreshButton">
+    <button v-on:click="fetchUsers"> Refresh</button>
+  </div>
+<!-- this button code is from stackoverflow -->
+
 <span><a :href="users.picture.large" ><img :src="users.picture.large" alt="profile picture"></a></span><br>
     <link href="https://randomuser.me/photos"> <small> <i> Source: Randomuser.me </i></small>
   <br> <br>
@@ -44,6 +50,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/random.user.js"></script>
 
+</script>
 </body>
 </html>
 <!--
