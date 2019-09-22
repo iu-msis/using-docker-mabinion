@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>My Page Title</title>
-  <link rel="stylesheet" href="/css/mystlye.css">
+  <link rel="stylesheet" href="css\mystyle.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
   <a class="navbar" href="index.html">Library</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +30,8 @@
 <h1 style="background-color:hsl(0, 0%, 71%);"> About Me </h1>
 <br>
 
-<div id="randomUserApp">
-<!-- this button code is from stackoverflow -->
-  <div id="refreshButton">
-    <button v-on:click="fetchUsers"> Refresh</button>
-  </div>
-<!-- this button code is from stackoverflow -->
 
+<div id="randomUserApp">
 <span><a :href="users.picture.large" ><img :src="users.picture.large" alt="profile picture"></a></span><br>
     <link href="https://randomuser.me/photos"> <small> <i> Source: Randomuser.me </i></small>
   <br> <br>
@@ -45,6 +40,11 @@
     <strong> Birthdate: </strong> <span> {{users.dob.date}} </span><br>
     <strong> Age: </strong><span> {{users.dob.age}} </span><br>
   <strong> Email: </strong><span> <a :href="'mailto:' + users.email">{{users.email}}</a></span><br>
+<div>
+  <form id="userfm" @submit.prevent="fetchUsers">
+    <button type="submit">Next User!</button>
+  </form>
+</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

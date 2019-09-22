@@ -1,5 +1,11 @@
 /** tablesort **/
 
+#randomUserApp {
+text-align: center;
+border-radius: 6px;
+
+}
+
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
 }
@@ -34,11 +40,6 @@ th[role=columnheader]:not(.no-sort):hover:after {
 	opacity: 1;
 }
 
-#refreshButton {
-	background-color: red;
-	padding: 10px;
-	border-radius: 80%;
-}
 
 h1 {
   color: white;
